@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+}
+
+/***** Heading/Paragraph Margin Resets *****/
+
+h1,
+h2,
+h3,
+h6,
+p {
+  margin: 0;
+}
+
+/***** Base Styles *****/
+
+html, body {
+  height:100%;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  background: hsla(200,80%,10%,1);
+  background-image: url(bluemtn1280.jpg);
+  background-size: 1920px;
+  font-weight: 300;
+}
+
+header {
+  max-width: 100%;
+  order: 1;
+  flex-shrink: 0;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  font-weight: 300;
+}
+
+header,
+footer {
+  background-color: hsla(200,50%,100%,0.1);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a:hover {
+  color: hsla(0,100%,100%,1);
+  background-color: hsla(190,80%,100%,0.2);
+  transition-duration: 0.1s;
+}
+
+header a:active {
+  background-color: hsla(190,80%,100%,0.4);
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0.4em;
+  padding-bottom: 0.5em;
+  align-self: center;
+  border-bottom: 1px solid white;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+h6 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#wrap {
+  order: 2;
+  overflow-y: scroll;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+nav h3 {
+  font-size: 1em;
+  font-weight: 100;
+  text-indent: 0.2em;
+}
+
+nav ul,
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  margin: 15px auto 0px auto;
+}
+
+footer ul {
+  margin: 20px auto 15px auto;
+}
+
+nav ul li,
+footer ul li {
+  padding-left: 1em;
+  padding-right: 1em;
+  align-self: center;
+  font-size: 1em;
+}
+
+nav ul li a {
+  padding: 5px 10px 7px 10px;
+}
+
+/***** Body Styles *****/
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bodyDiv {
+  background: linear-gradient(hsla(200,50%,20%,0.2), hsla(200,50%,20%,0.9));
+  box-shadow: inset 0 5px 5px -5px hsla(190,10%,10%,0.5);
+  min-height: 79vh;
+  padding: 7vh 7vw;
+  display: flex;
+  flex-direction: column;
+  color: hsl(10,50%,100%);
+}
+
+.bodyDiv:nth-of-type(even) {
+  background: linear-gradient(hsla(100,50%,20%,0.2), hsla(200,50%,20%,0.9));
+}
+
+#about ul {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  justify-content: center;
+}
+
+#about li {
+  margin: 0.5em 1em 0.5em 0em;
+}
+
+#about ul li:nth-child(odd) {
+  color: hsla(190,80%,90%,0.8);
+}
+
+#about ul li:nth-child(even) {
+  color: hsla(100,80%,90%,0.8);
+}
+
+#about p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+#projects li {
+  margin: 0.5em 0.5em 1em 0.5em;
+  font-size: 1em;
+}
+
+.description {
+  text-indent: 0.1em;
+  font-size: 0.9em;
+  padding-top: 0.1em;
+}
+
+.description:before {
+  font-size: 0.8em;
+  content:"• ";
+}
+
+#blog {
+  background: linear-gradient(hsla(200,50%,20%,0.2), hsla(200,50%,20%,0.9));
+}
+  
+#blog h3 {
+  font-weight: 100;
+  margin: 0.4em 0;
+  font-size: 1.3em;
+}
+
+#blog p {
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+#blog p:first-of-type {
+  margin: 0;
+}
+
+.bodyDiv a {
+  color: hsl(190,100%,80%);
+}
+
+#blog h6 {
+  padding-bottom: 1em;
+  border-bottom: 1px solid white;
+}
+
+#blog h6:last-of-type {
+  border: none;
+}
+
+.bodyDiv:last-of-type {   
+  padding-bottom: 0;
+}
+
+
+/***** Footer Styles *****/
+
+footer {
+  display: flex;
+  order: 3;
+  flex-shrink: 0;
+  flex-basis: 50px;
+}
+
+footer ul li {
+  padding: 0 2vw;
+}
+
+footer ul li a {
+  padding: 12.5px 6.25px 0 6.25px;
+}
+
+footer svg {
+  fill: hsla(0,100%,100%,0.85);
+}
+
+footer ul li svg:hover {
+  transform: scale(0.95,0.95);
+  transition-duration: 0.1s;
+  fill: #eee;
+}
+
+footer ul li svg:active {
+  fill: hsla(0,100%,100%,1);
+  transition-duration: 0.1s;
+}
+
+/***** Media Queries *****/
+
+@media screen and (min-width: 641px) {
+  .bodyDiv h2,
+  .bodyDiv p,
+  .bodyDiv ul,
+  form,
+  #tumblrfeed {
+    max-width: 560px;
+    align-self: center;
+  }
+  
+  .bodyDiv {
+    padding: 10vh 5vw;
+  }
+  
+  nav {
+    flex-direction: row;
+  }
+  
+  #name {
+    align-items: flex-start;
+    flex-grow: 1;
+    padding-left: 3vw;
+  }
+  
+  nav ul {
+    align-self: flex-start;
+  }
+  
+  #blog p,
+  #tumblrfeed {
+    max-width: 560px;
+  }
+  
+  #about ul {
+    justify-content: center;
+  }
+
+  #about li {
+    margin: 1em 0.5em 0em 0.5em;
+    padding: 0.2em;
+  }
+  
+@media screen and (min-width: 1024px) {
+ 
+  
+  .bodyDiv:nth-of-type(even) {
+    background: linear-gradient(hsla(200,50%,20%,0.2), hsla(200,50%,20%,0.9));}
+  
+  #container {
+    flex-direction: row;
+    box-shadow: inset 0 5px 5px -5px hsla(190,10%,10%,0.5);
+    justify-content: space-around;
+    }
+    
+  #projects {
+    box-shadow: inset 0 5px 5px -5px hsla(190,10%,10%,0.5);
+    width: 50vw;
+  }
+}
