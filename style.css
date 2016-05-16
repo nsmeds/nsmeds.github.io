@@ -34,8 +34,8 @@ header {
   max-width: 100%;
   order: 1;
   flex-shrink: 0;
-  padding-top: 0.5em;
-  padding-bottom: 1em;
+  padding-top: 0.25em;
+  padding-bottom: 0.75em;
   font-weight: 300;
 }
 
@@ -127,7 +127,7 @@ footer ul li {
   padding-left: 1em;
   padding-right: 1em;
   align-self: center;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 nav ul li a {
@@ -144,7 +144,7 @@ nav ul li a {
 .bodyDiv {
   background: linear-gradient(hsla(200,50%,20%,0.2), hsla(200,50%,20%,0.9));
   box-shadow: inset 0 5px 5px -5px hsla(190,10%,10%,0.5);
-  min-height: 79vh;
+  min-height: 90vh;
   padding: 7vh 7vw;
   display: flex;
   flex-direction: column;
@@ -238,11 +238,11 @@ footer {
   display: flex;
   order: 3;
   flex-shrink: 0;
-  flex-basis: 50px;
+  flex-basis: 7vh;
 }
 
 footer ul li {
-  padding: 0 2vw;
+  padding: 00 2vw;
 }
 
 footer ul li a {
@@ -267,6 +267,13 @@ footer ul li svg:active {
 /***** Media Queries *****/
 
 @media screen and (min-width: 641px) {
+ 
+  
+  header {
+    padding-top: 0.5em;
+    padding-bottom: 1em;  
+  }
+  
   .bodyDiv h2,
   .bodyDiv p,
   .bodyDiv ul,
@@ -294,6 +301,10 @@ footer ul li svg:active {
     align-self: flex-start;
   }
   
+  nav ul li {
+    font-size: 1em;
+  }
+  
   #blog p,
   #tumblrfeed {
     max-width: 560px;
@@ -307,6 +318,7 @@ footer ul li svg:active {
     margin: 1em 0.5em 0em 0.5em;
     padding: 0.2em;
   }
+}
   
 @media screen and (min-width: 1024px) {
  
