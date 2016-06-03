@@ -46,7 +46,7 @@ header {
 
 header,
 footer {
-  background-color: hsla(200,50%,100%,0.1);
+  background-color: hsla(200,50%,10%,0.1);
 }
 
 a {
