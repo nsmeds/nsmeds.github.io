@@ -14,19 +14,28 @@ p {
 
 /***** Base Styles *****/
 
-html, body {
-  height:100%;
-  min-height: 100vh;
+body,
+.body-div,
+.body-div:nth-of-type(odd) {
+  color: hsl(0,0%,29%);
+  background: hsl(0,0%,99%);
+}
+
+header,
+footer,
+.body-div:nth-of-type(even) {
+  color: hsl(0,0%,99%);
+  background-color: hsl(0,0%,19%);
+}
+
+.body-div:nth-of-type(even) > h2 {
+  border-bottom: 1px solid hsl(0,0%,99%);
 }
 
 body {
   display: flex;
   flex-direction: column;
   font-family: 'Lato', sans-serif;
-  color: #fff;
-  background: hsla(200,80%,10%,1);
-  background-image: url(bluemtn1280.jpg);
-  background-size: 1920px;
   font-weight: 300;
 }
 
@@ -37,31 +46,30 @@ p {
 
 header {
   max-width: 100%;
-  order: 1;
   flex-shrink: 0;
   padding-top: 0.25em;
   padding-bottom: 0.75em;
   font-weight: 300;
 }
 
-header,
-footer {
-  background-color: hsla(200,50%,10%,0.1);
-}
-
 a {
   text-decoration: none;
-  color: inherit;
+  color: hsl(0,0%,60%);
+  font-weight: 400;
 }
 
-header a:hover {
-  color: hsla(0,100%,100%,1);
-  background-color: hsla(190,80%,100%,0.2);
+a:hover {
+  opacity: 0.5;
   transition-duration: 0.1s;
 }
 
-header a:active {
-  background-color: hsla(190,80%,100%,0.4);
+a:active {
+  opacity: 0.9;
+}
+
+header a {
+  font-weight: 300;
+  color: hsl(0,0%,99%)
 }
 
 h2 {
@@ -71,7 +79,7 @@ h2 {
   margin-bottom: 0.4em;
   padding-bottom: 0.5em;
   align-self: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid hsl(0,0%,19%);
 }
 
 h3 {
@@ -84,8 +92,6 @@ h6 {
 }
 
 #wrap {
-  order: 2;
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -105,7 +111,7 @@ nav {
 }
 
 nav h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 300;
 }
 
@@ -141,6 +147,42 @@ nav ul li a {
   padding: 5px 10px 7px 10px;
 }
 
+/***** Social Icon Styles *****/
+
+#social-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-ul li {
+  padding: 5vh 5vw;
+}
+
+.icon-ul li a {
+/*  padding: 12.5px 6.25px 0 6.25px;*/
+  padding: 3vh 3vw;
+  color: hsl(0,0%,40%);
+}
+
+.icon-ul svg {
+  fill: hsl(0,0%,40%);
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
+
+.icon-ul li svg:hover {
+  transform: scale(0.95,0.95);
+  transition-duration: 0.2s;
+  opacity: 0.8;
+}
+
+.icon-ul li svg:active {
+  fill: hsla(0,100%,100%,1);
+  transition-duration: 0.1s;
+}
+
 /***** Body Styles *****/
 
 #container {
@@ -149,46 +191,11 @@ nav ul li a {
 }
 
 .body-div {
-  background: linear-gradient(hsla(200,50%,20%,0.2), hsla(200,50%,20%,0.9));
+  display: flex;
+  flex-direction: column;
   box-shadow: inset 0 5px 5px -5px hsla(190,10%,10%,0.5);
   min-height: 90vh;
   padding: 7vh 7vw;
-  display: flex;
-  flex-direction: column;
-  color: hsl(10,50%,100%);
-}
-
-.body-div:nth-of-type(even) {
-  background: linear-gradient(hsla(100,50%,20%,0.2), hsla(200,50%,20%,0.9));
-}
-
-.body-div a {
-  color: hsl(180,50%,70%);
-}
-
-.body-div a:hover { 
-  color: hsla(0,100%,100%,1);
-  background-color: hsla(190,80%,100%,0.2);
-  transition-duration: 0.1s;
-}
-
-#about ul {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 80vw;
-  justify-content: center;
-}
-
-#about li {
-  margin: 0.5em 1em 0.5em 0em;
-}
-
-#about ul li:nth-child(odd) {
-  color: hsla(190,80%,90%,0.8);
-}
-
-#about ul li:nth-child(even) {
-  color: hsla(100,80%,90%,0.8);
 }
 
 #about p {
@@ -204,17 +211,9 @@ nav ul li a {
   font-size: 1.2em;
 }
 
-header a:active {
-  background-color: hsla(190,80%,100%,0.4);
-}
-
 .description {
   font-size: 1em;
   padding-top: 0.1em;
-}
-
-#blog {
-  background: linear-gradient(hsla(200,50%,20%,0.2), hsla(200,50%,20%,0.9));
 }
   
 #blog h3 {
@@ -241,6 +240,11 @@ header a:active {
   border: none;
 }
 
+#tumblrfeed img,
+iframe {
+  margin-bottom: 1em;
+}
+
 .body-div:last-of-type {   
   padding-bottom: 0;
 }
@@ -248,35 +252,31 @@ header a:active {
 
 /***** Footer Styles *****/
 
+.scrollToTop {
+  display: none;
+  position: fixed;
+  right: 50%;
+  bottom: 0px;
+  z-index: 999;
+  overflow: hidden;
+}
+
+.scrollToTop svg {
+  fill: hsl(0,0%,40%);
+  opacity: 0.5;
+}
+
+.scrollToTop svg:hover {
+  fill: hsl(0,0%,90%);
+  opacity: 1;
+  transition: 0.1s;
+}
+
 footer {
   display: flex;
-  order: 3;
   flex-shrink: 0;
   flex-basis: 7vh;
   max-height: 7vh;
-}
-
-footer ul li {
-  padding: 00 2vw;
-}
-
-footer ul li a {
-  padding: 12.5px 6.25px 0 6.25px;
-}
-
-footer svg {
-  fill: hsla(0,100%,100%,0.85);
-}
-
-footer ul li svg:hover {
-  transform: scale(0.8,0.8);
-  transition-duration: 0.2s;
-  fill: #eee;
-}
-
-footer ul li svg:active {
-  fill: hsla(0,100%,100%,1);
-  transition-duration: 0.1s;
 }
 
 /***** Media Queries *****/
@@ -298,6 +298,14 @@ footer ul li svg:active {
     align-self: center;
   }
   
+  #contact {
+/*    padding: 10vh 10vw;*/
+  }
+  
+  .icon-ul li {
+    padding: 5vh 5vw;
+  }
+
   .body-div {
     padding: 10vh 5vw;
   }
