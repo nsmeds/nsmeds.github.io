@@ -28,6 +28,10 @@ footer,
   background-color: hsl(0,0%,19%);
 }
 
+.body-div:nth-of-type(even) > h2 {
+  border-bottom: 1px solid hsl(0,0%,99%);
+}
+
 body {
   display: flex;
   flex-direction: column;
