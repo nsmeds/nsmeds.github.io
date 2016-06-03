@@ -149,15 +149,11 @@ nav ul li a {
 
 /***** Social Icon Styles *****/
 
-.icon-ul {
+#social-wrap {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.icon-ul span {
-  
+  justify-content: center;
 }
 
 .icon-ul li {
@@ -166,7 +162,7 @@ nav ul li a {
 
 .icon-ul li a {
 /*  padding: 12.5px 6.25px 0 6.25px;*/
-  padding: 5vh 5vw;
+  padding: 3vh 3vw;
   color: hsl(0,0%,40%);
 }
 
@@ -244,6 +240,11 @@ nav ul li a {
   border: none;
 }
 
+#tumblrfeed img,
+iframe {
+  margin-bottom: 1em;
+}
+
 .body-div:last-of-type {   
   padding-bottom: 0;
 }
@@ -263,6 +264,12 @@ nav ul li a {
 .scrollToTop svg {
   fill: hsl(0,0%,40%);
   opacity: 0.5;
+}
+
+.scrollToTop svg:hover {
+  fill: hsl(0,0%,90%);
+  opacity: 1;
+  transition: 0.1s;
 }
 
 footer {
@@ -292,9 +299,13 @@ footer {
   }
   
   #contact {
-    padding: 10vh 10vw;
+/*    padding: 10vh 10vw;*/
   }
   
+  .icon-ul li {
+    padding: 5vh 5vw;
+  }
+
   .body-div {
     padding: 10vh 5vw;
   }
