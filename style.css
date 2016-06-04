@@ -39,16 +39,20 @@ body {
   font-weight: 300;
 }
 
+h1,
+h2,
+nav h3,
+nav ul {
+  letter-spacing: 0.1em;
+}
+
 p {
   font-size: 1.1em;
   line-height: 1.3em;
 }
 
 header {
-  max-width: 100%;
-  flex-shrink: 0;
-  padding-top: 0.25em;
-  padding-bottom: 0.75em;
+  padding: 0.25em 1em 0.75em 1em;
   font-weight: 300;
 }
 
@@ -59,12 +63,13 @@ a {
 }
 
 a:hover {
-  opacity: 0.5;
-  transition-duration: 0.1s;
+  opacity: 0.8;
+  transition-duration: 0.2s;
 }
 
 a:active {
-  opacity: 0.9;
+  opacity: 0.6;
+  transition-duration: 0.2s;
 }
 
 header a {
@@ -79,7 +84,7 @@ h2 {
   margin-bottom: 0.4em;
   padding-bottom: 0.5em;
   align-self: center;
-  border-bottom: 1px solid hsl(0,0%,19%);
+  border-bottom: 1px solid hsl(0,0%,50%);
 }
 
 h3 {
@@ -107,18 +112,19 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-transform: uppercase;
 }
 
 nav h1 {
   font-size: 2em;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 nav h3 {
   font-size: 1em;
-  font-weight: 100;
-  text-indent: 0.2em;
+  text-indent: 0.1em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid hsl(0,0%,50%);
 }
 
 nav ul,
@@ -127,20 +133,20 @@ footer ul {
   justify-content: center;
 }
 
-nav ul {
-  margin: 15px auto 0px auto;
+nav ul,
+#name {
+  margin: 0.5em auto 0 auto;
 }
 
 footer ul {
   margin: 20px auto 15px auto;
 }
 
-nav ul li,
-footer ul li {
+nav ul li {
   padding-left: 1em;
   padding-right: 1em;
   align-self: center;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 nav ul li a {
@@ -233,7 +239,7 @@ nav ul li a {
 
 #blog h6 {
   padding-bottom: 1em;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid hsl(0,0%,50%);
 }
 
 #blog h6:last-of-type {
@@ -282,24 +288,13 @@ footer {
 /***** Media Queries *****/
 
 @media screen and (min-width: 641px) {
- 
-  
-  header {
-    padding-top: 0.5em;
-    padding-bottom: 1em;  
-  }
-  
+
   .body-div h2,
   .body-div p,
   .body-div ul,
-  form,
   #tumblrfeed {
     max-width: 560px;
     align-self: center;
-  }
-  
-  #contact {
-/*    padding: 10vh 10vw;*/
   }
   
   .icon-ul li {
@@ -312,20 +307,30 @@ footer {
   
   nav {
     flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  nav h3 {
+    border: none;
+  }
+  
+  nav h3,
+  nav ul {
+    padding-bottom: 0.4em;
   }
   
   #name {
     align-items: flex-start;
-    flex-grow: 1;
-    padding-left: 3vw;
   }
   
   nav ul {
-    align-self: flex-start;
+    align-self: flex-end;
   }
   
   nav ul li {
     font-size: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
   
   #blog p,
