@@ -144,8 +144,8 @@ footer ul {
 }
 
 nav ul li {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   align-self: center;
   font-size: 1em;
 }
