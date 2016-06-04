@@ -54,6 +54,7 @@ p {
 header {
   padding: 0.25em 1em 0.75em 1em;
   font-weight: 300;
+  max-width: 100vw;
 }
 
 a {
