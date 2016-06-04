@@ -52,7 +52,7 @@ p {
 }
 
 header {
-  padding: 0.25em 1em 0.75em 1em;
+  padding: 0.25em 0em 0.75em 0em;
   font-weight: 300;
   max-width: 100vw;
 }
