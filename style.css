@@ -173,17 +173,26 @@ nav ul li a {
   color: hsl(0,0%,40%);
 }
 
+.icon-ul li a:hover > svg {
+  
+  transform: scale(0.95,0.95);
+  transition-duration: 0.2s;
+  opacity: 0.8;
+}
+
 .icon-ul svg {
   fill: hsl(0,0%,40%);
   margin-bottom: -5px;
   margin-right: 5px;
 }
 
+/*
 .icon-ul li svg:hover {
   transform: scale(0.95,0.95);
   transition-duration: 0.2s;
   opacity: 0.8;
 }
+*/
 
 .icon-ul li svg:active {
   fill: hsla(0,100%,100%,1);
@@ -262,8 +271,9 @@ iframe {
 .scrollToTop {
   display: none;
   position: fixed;
-  right: 50%;
+  right: 47%;
   bottom: 0px;
+  margin: 0 auto;
   z-index: 999;
   overflow: hidden;
 }
