@@ -154,51 +154,6 @@ nav ul li a {
   padding: 5px 10px 7px 10px;
 }
 
-/***** Social Icon Styles *****/
-
-#social-wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.icon-ul li {
-  padding: 5vh 5vw;
-}
-
-.icon-ul li a {
-/*  padding: 12.5px 6.25px 0 6.25px;*/
-  padding: 3vh 3vw;
-  color: hsl(0,0%,40%);
-}
-
-.icon-ul li a:hover > svg {
-  
-  transform: scale(0.95,0.95);
-  transition-duration: 0.2s;
-  opacity: 0.8;
-}
-
-.icon-ul svg {
-  fill: hsl(0,0%,40%);
-  margin-bottom: -5px;
-  margin-right: 5px;
-}
-
-/*
-.icon-ul li svg:hover {
-  transform: scale(0.95,0.95);
-  transition-duration: 0.2s;
-  opacity: 0.8;
-}
-*/
-
-.icon-ul li svg:active {
-  fill: hsla(0,100%,100%,1);
-  transition-duration: 0.1s;
-}
-
 /***** Body Styles *****/
 
 #container {
@@ -263,6 +218,51 @@ iframe {
 
 .body-div:last-of-type {   
   padding-bottom: 0;
+}
+
+/***** Social Icon Styles *****/
+
+#social-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-ul li {
+  padding: 5vh 5vw;
+}
+
+.icon-ul li a {
+/*  padding: 12.5px 6.25px 0 6.25px;*/
+  padding: 3vh 3vw;
+  color: hsl(0,0%,40%);
+}
+
+.icon-ul li a:hover > svg {
+  
+  transform: scale(0.95,0.95);
+  transition-duration: 0.2s;
+  opacity: 0.8;
+}
+
+.icon-ul svg {
+  fill: hsl(0,0%,40%);
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
+
+/*
+.icon-ul li svg:hover {
+  transform: scale(0.95,0.95);
+  transition-duration: 0.2s;
+  opacity: 0.8;
+}
+*/
+
+.icon-ul li svg:active {
+  fill: hsla(0,100%,100%,1);
+  transition-duration: 0.1s;
 }
 
 
