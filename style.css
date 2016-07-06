@@ -7,6 +7,7 @@
 h1,
 h2,
 h3,
+h4,
 h6,
 p {
   margin: 0;
@@ -178,7 +179,12 @@ nav ul li a {
   margin: 0.5em 0.5em 1em 0.5em;
 }
 
-#projects li a {
+#projects li p a {
+  color: inherit;
+  font-weight: inherit;
+}
+
+#projects h4 {
   font-size: 1.2em;
 }
 
