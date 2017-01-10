@@ -26,7 +26,7 @@ header,
 footer,
 .body-div:nth-of-type(even) {
   color: hsl(0,0%,99%);
-  background-color: hsl(0,0%,19%);
+  background-color: hsl(205, 43%, 10%);
 }
 
 .body-div:nth-of-type(even) > h2 {
@@ -53,9 +53,11 @@ p {
 }
 
 header {
-  padding: 0.25em 0em 0.75em 0em;
+  padding: 0.5em 0 1em 0;
   font-weight: 300;
   max-width: 100vw;
+  background-image: url('header.jpg');
+  background-size: cover;
 }
 
 a {
