@@ -62,7 +62,7 @@ header {
 
 a {
   text-decoration: none;
-  color: hsl(0,0%,60%);
+  color: hsl(200,100%,90%);
   font-weight: 400;
 }
 
@@ -182,7 +182,7 @@ nav ul li a {
 }
 
 #projects li p a {
-  color: hsl(0,0%,60%);
+/*  color: hsl(0,0%,60%);*/
   font-weight: inherit;
 }
 
