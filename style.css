@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  background-image: url('bluemtn1280.jpg');
+  background-image: url('img/bluemtn1280.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -183,7 +183,6 @@ nav ul li a {
 }
 
 #projects li p a {
-/*  color: hsl(0,0%,60%);*/
   font-weight: inherit;
 }
 
@@ -289,5 +288,9 @@ nav ul li a {
   .icon-ul {
     padding-bottom: 1em;
     margin: 1em auto;
+  }
+
+  .scrollToTop {
+    bottom: -5px;
   }
 }
