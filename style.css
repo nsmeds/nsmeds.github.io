@@ -174,8 +174,7 @@ nav ul li a {
 }
 
 #about p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin: 0.5em;
 }
 
 #projects li {
@@ -250,9 +249,16 @@ nav ul li a {
 
 /***** Media Queries *****/
 
+
 @media screen and (min-width: 761px) {
 
-  
+  .body-div {
+    padding: 3% 17%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+
   #container {
     flex-direction: row;
     max-width: 1400px;
@@ -281,8 +287,10 @@ nav ul li a {
     align-self: flex-start;
   }
   
-  #projects ul li {
+  #projects ul li,
+  #about p {
     margin-left: 0;
+    margin-right: 0;
   }
 
   .icon-ul {
@@ -293,4 +301,5 @@ nav ul li a {
   .scrollToTop {
     bottom: -5px;
   }
+  
 }
