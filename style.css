@@ -198,29 +198,29 @@ nav ul li a {
 
 /***** Social Icon Styles *****/
 
-.icon-ul {
+#icon-ul {
   display: flex;
   padding-top: 1em;
   padding-bottom: 3em;
   margin: 0 auto;
 }
 
-.icon-ul li a {
+#icon-ul li a {
   padding: 1em;
   color: hsl(200,50%,90%);
 }
 
-.icon-ul li a:hover > svg {
+#icon-ul li a:hover > svg {
   transform: scale(0.95,0.95);
   transition-duration: 0.1s;
 }
 
-.icon-ul svg {
+#icon-ul svg {
   fill: hsl(200,50%,90%);
   margin-bottom: -5px;
 }
 
-.icon-ul li a:active {
+#icon-ul li a:active {
   fill: hsla(0,100%,100%,1);
   transition-duration: 0.1s;
 }
@@ -298,7 +298,7 @@ nav ul li a {
     margin-right: 0;
   }
 
-  .icon-ul {
+  #icon-ul {
     padding-bottom: 1em;
     margin: 1em auto;
   }
