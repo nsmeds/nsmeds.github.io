@@ -11,9 +11,10 @@ $(document).ready(function(){
 	
 	//Click event to scroll to top
 	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 0},1000);
+		$('html, body').animate({scrollTop : 0},500);
 		return false;
 	});
+	
 	
 });
 
