@@ -1,0 +1,78 @@
+$cto: #DCDCAA;
+$light: #CCCCCC;
+$blue: #569CD6;
+$lightblue: #9CDCFE;
+$darkblue: #000C18;
+$green: #4EC9B0;
+$pink: #C586C0;
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100%;
+    font-family: 'Source Code Pro', monospace;
+    color: $cto;
+    background-color: $darkblue;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    border-top: 1px solid $blue;
+}
+
+main div p:last-of-type {
+    margin-bottom: 1.33em;
+}
+
+h3 {
+    color: $cto;
+}
+
+h4 {
+    color: $cto;
+}
+
+p {
+    color: $light;
+    max-width: 640px;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: $lightblue;
+}
+
+a:hover {
+    color: $green;
+}
+
+svg:hover {
+    fill: $green;
+}
+
+span {
+    color: $lightblue;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.icons li {
+    padding-right: 1em;
+}

@@ -1,0 +1,57 @@
+html {
+  height: 100%;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100%;
+  font-family: 'Source Code Pro', monospace;
+  color: #DCDCAA;
+  background-color: #000C18;
+  margin-left: 1em;
+  margin-right: 1em; }
+
+header {
+  display: flex;
+  justify-content: space-between; }
+
+main {
+  border-top: 1px solid #569CD6; }
+
+main div p:last-of-type {
+  margin-bottom: 1.33em; }
+
+h3 {
+  color: #DCDCAA; }
+
+h4 {
+  color: #DCDCAA; }
+
+p {
+  color: #CCCCCC;
+  max-width: 640px; }
+
+a, a:visited {
+  text-decoration: none;
+  color: #9CDCFE; }
+
+a:hover {
+  color: #4EC9B0; }
+
+svg:hover {
+  fill: #4EC9B0; }
+
+span {
+  color: #9CDCFE; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+.icons {
+  display: flex;
+  flex-direction: row; }
+
+.icons li {
+  padding-right: 1em; }
+
+/*# sourceMappingURL=style.css.map */
